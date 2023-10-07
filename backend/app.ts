@@ -3,7 +3,7 @@ import { createClient } from "redis";
 import { json } from "body-parser";
 
 const DEFAULT_BALANCE = 100;
-const LOCK_TTL = 5;
+const LOCK_TTL = 1;
 
 interface ChargeResult {
     isAuthorized: boolean;
